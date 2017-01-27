@@ -1,7 +1,7 @@
 echo
 echo "Installing Git associated tools"
 
-sudo apt-get install --assume-yes -f gconf2 gconf-service libgtk2.0-0 libnotify4 libnss3 python gvfs-bin
+sudo apt-get install gconf2 gconf-service libgtk2.0-0 libnotify4 libnss3 python gvfs-bin
 
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo dpkg -i gitkraken-amd64.deb
