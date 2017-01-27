@@ -1,16 +1,10 @@
 echo
-echo "Installing Git and associated tools"
-brew install git
-brew tap git-duet/tap
-brew install git-duet
-brew install git-pair
-brew cask install github-desktop
-brew cask install rowanj-gitx
-brew cask install sourcetree
+echo "Installing Git associated tools"
 
-echo
-echo "Putting a sample git-pair file in ~/.pairs"
-cp files/.pairs ~/.pairs
+sudo apt-get install --assume-yes -f gconf2 gconf-service libgtk2.0-0 libnotify4 libnss3 python gvfs-bin
+
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+sudo dpkg -i gitkraken-amd64.deb
 
 echo
 echo "Setting global Git configurations"
