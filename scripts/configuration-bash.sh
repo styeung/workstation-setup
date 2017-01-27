@@ -1,8 +1,6 @@
 echo
 echo "Configuring bash with bash-it"
-brew install grc
-brew install coreutils
-brew install watch
+sudo apt-get install grc watch --assume-yes
 cp files/dircolors.ansi-dark ~/.dircolors
 cp files/.inputrc ~/.inputrc
 rm -rf ~/.bash_it
